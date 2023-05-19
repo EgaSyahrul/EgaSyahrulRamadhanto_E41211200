@@ -11,6 +11,6 @@ class Budaya extends Model
     protected $table = 'budayas'; // Ubah nama tabel sesuai dengan migrasi ('budayas')
     protected $primaryKey = 'id'; // Ubah primary key jika perlu
     protected $fillable = [
-        'nama', 'deskripsi', 'lokasi', 'tahun_ditemukan' // Tambahkan kolom 'tahun_ditemukan'
+        'nama', 'alamat', 'tanggal_lahir', 'jenis_kelamin' // Tambahkan kolom 'tahun_ditemukan'
     ];
 }

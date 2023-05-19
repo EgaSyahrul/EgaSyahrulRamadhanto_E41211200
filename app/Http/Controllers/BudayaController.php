@@ -30,7 +30,7 @@ class BudayaController extends Controller
         Budaya::create($request->all());
 
         return redirect()->route('budaya.index')
-            ->with('success', 'Data Budaya baru telah berhasil disimpan');
+            ->with('success', 'Data Pelanggan baru telah berhasil disimpan');
     }
 
     public function edit($id)
@@ -52,7 +52,7 @@ class BudayaController extends Controller
         $budaya->update($request->all());
 
         return redirect()->route('budaya.index')
-            ->with('success', 'Data Budaya telah berhasil diperbarui');
+            ->with('success', 'Data Pelanggan telah berhasil diperbarui');
     }
 
     public function destroy($id)
@@ -61,6 +61,6 @@ class BudayaController extends Controller
         $budaya->delete();
 
         return redirect()->route('budaya.index')
-            ->with('success', 'Data Budaya telah berhasil dihapus');
+            ->with('success', 'Data Pelanggan telah berhasil dihapus');
     }
 }
