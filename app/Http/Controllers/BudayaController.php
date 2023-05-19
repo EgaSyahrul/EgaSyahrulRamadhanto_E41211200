@@ -23,8 +23,8 @@ class BudayaController extends Controller
         $request->validate([
             'nama' => 'required',
             'alamat' => 'required',
-            'tanggal' => 'required',
-            'kelamin' => 'required',
+            'tanggal_lahir' => 'required',
+            'jenis_kelamin' => 'required',
         ]);
 
         Budaya::create($request->all());
@@ -44,8 +44,8 @@ class BudayaController extends Controller
         $request->validate([
             'nama' => 'required',
             'alamat' => 'required',
-            'tanggal' => 'required',
-            'kelamin' => 'required',
+            'tanggal_lahir' => 'required',
+            'jenis_kelamin' => 'required',
         ]);
 
         $budaya = Budaya::find($id);

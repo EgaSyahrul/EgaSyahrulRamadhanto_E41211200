@@ -65,15 +65,15 @@
                                             <input type="text" class="form-control" name="alamat" id="alamat" required>
                                         </div>
                                         <div class="form-group mb-3">
-                                            <label for="tanggal">Tanggal Lahir</label>
-                                            <input type="text" class="form-control" name="tanggal" id="tanggal" required>
+                                            <label for="tanggal_lahir">Tanggal Lahir</label>
+                                            <input type="text" class="form-control" name="tanggal_lahir" id="tanggal_lahir" required>
                                         </div>
 
                                        
 
                                         <div class="form-group mb-3">
-                                            <label for="jenis kelamin">Jenis Kelamin</label>
-                                            <input type="text" class="form-control" name="kelamin" id="kelamin" required>
+                                            <label for="jenis_kelamin">Jenis Kelamin</label>
+                                            <input type="text" class="form-control" name="jenis_kelamin" id="jenis_kelamin" required>
                                         </div>
 
                                     
@@ -155,14 +155,14 @@
                                                         value="{{ $item->alamat }}" required>
                                                 </div>
                                                 <div class="form-group mb-3">
-                                                    <label for="tanggal">Tanggal Lahir</label>
-                                                    <input type="text" class="form-control" name="tanggal" id="tanggal"
+                                                    <label for="tanggal_lahir">Tanggal Lahir</label>
+                                                    <input type="text" class="form-control" name="tanggal_lahir" id="tanggal_lahir"
                                                         value="{{ $item->tanggal_lahir }}" required>
                                                 </div>
 
                                                 <div class="form-group mb-3">
-                                                    <label for="kelamin">Jenis Kelamin</label>
-                                                    <input type="text" class="form-control" name="kelamin" id="kelamin"
+                                                    <label for="jenis_kelamin">Jenis Kelamin</label>
+                                                    <input type="text" class="form-control" name="jenis_kelamin" id="jenis_kelamin"
                                                         value="{{ $item->jenis_kelamin }}" required>
                                                 </div>
 
@@ -204,16 +204,16 @@
         rules: {
             nama: "required",
             alamat: "required",
-            tanggal: "required",
-            kelamin: "required",
+            tanggal_lahir: "required",
+            jenis_kelamin: "required",
         },
 
         // Specify validation error messages
         messages: {
             nama: "Mohon Isi Dengan Nama Lengkap Anda",
             alamat: "Mohon Isi Dengan Alamat Anda",
-            tanggal: "Mohon Isi Dengan Tanggal Lahir Anda",
-            kelamin: "Mohon Isi Dengan Jenis Kelamin Anda",
+            tanggal_lahir: "Mohon Isi Dengan Tanggal Lahir Anda",
+            jenis_kelamin: "Mohon Isi Dengan Jenis Kelamin Anda",
         },
 
         // Specify submit handler
